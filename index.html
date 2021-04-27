@@ -9,7 +9,9 @@
   </head>
   <body>
     <header class="wrapper">
-      <section class="fullscreen">
+      <section class="fullscreen" 
+        data-vide-bg="mp4: video/ocean.mp4, webm: video/ocean.webm, ogv: video/ocean.ogv, poster: video/ocean.jpg"
+        data-vide-options="posterType: jpg, loop: true, muted: true,">
         <div class="fullscreen__container">
           <div class="header">
             <div class="logo header__logo">
@@ -26,11 +28,28 @@
           <!-- /.header -->
           <nav class="menu">
             <ul class="menu__list">
-              <li><a href="#" class="menu__link">Главная</a></li>
-              <li><a href="#" class="menu__link">Работы</a></li>
-              <li><a href="#" class="menu__link">Услуги</a></li>
-              <li><a href="#" class="menu__link">Контакты</a></li>
+              <li><a href="#" class="menu__link menu__link-active">главная</a></li>
+              <li><a href="#" class="menu__link">работы</a></li>
+              <li><a href="#" class="menu__link">услуги</a></li>
+              <li><a href="#" class="menu__link">контакты</a></li>
             </ul>
+            <div class="social">
+              <a href="https://www.facebook.com/ogonok.pro" class="social__link">
+                <svg class="social__img">
+                  <use xlink:href="images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="https://vimeo.com/ogonok" class="social__link">
+                <svg class="social__img">
+                  <use xlink:href="images/sprite.svg#vimeo"></use>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/ogonok.pro/" class="social__link">
+                <svg class="social__img">
+                  <use xlink:href="images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </div>
           </nav>
         </div>
         <!-- /.container -->
@@ -93,6 +112,7 @@
     <!-- /.wrapper -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="javascript/jquery.vide.min.js"></script>
     <script src="javascript/scripts.js"></script>
   </body>
 </html>

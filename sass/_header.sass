@@ -1,4 +1,10 @@
 .header
+  position: fixed
+  z-index: 999
+  padding: 0 40px
+  top: 0
+  right: 0
+  left: 0
   display: flex
   align-items: center
   justify-content: space-between
@@ -43,8 +49,49 @@
 // Меню бургера
 .menu
   visibility: hidden
+  position: fixed
+  z-index: 9
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  background-color: #fff
   &-active
     visibility: visible
   &__list
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    list-style: none
+    padding: 0
+    margin: 0
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
   &__link
+    text-decoration: none
+    font-size: 40px
+    font-weight: 300
+    color: #000
+    &:hover
+      color: #ff2b15
 
+    &-active
+      color: #ff8562
+
+.social
+  position: absolute
+  bottom: 40px
+  right: 0
+  left: 0
+  align-items: center
+  text-align: center
+  &__link
+    text-decoration: none
+    margin: 5px
+  &__img
+    width: 30px
+    height: 30px
