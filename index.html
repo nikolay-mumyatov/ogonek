@@ -8,10 +8,15 @@
     <title>Ogonek.pro</title>
   </head>
   <body>
+    <!-- autoplay="autoplay"  -->
     <header class="wrapper">
-      <section class="fullscreen" 
-        data-vide-bg="mp4: video/ocean.mp4, webm: video/ocean.webm, ogv: video/ocean.ogv, poster: video/ocean.jpg"
-        data-vide-options="posterType: jpg, loop: true, muted: true,">
+      <section class="fullscreen">
+        <video autoplay="autoplay" loop="loop" muted="muted" poster="video/cadr.png" class="fullscreen__video">
+          <source src="video/A Woman Is Taking Pictures With a Film Camera.mp4" type="video/mp4">
+          <source src="video/A-Woman-Is-Taking-Pictures-With-a-Film-Camera.webm type="video/webm">
+          <source src="video/A-Woman-Is-Taking-Pictures-With-a-Film-Camera.ogv" type="video/ogg"/>
+        </video>
+        <!-- /.fullscreen__video -->
         <div class="fullscreen__container">
           <div class="header">
             <div class="logo header__logo">
@@ -51,6 +56,20 @@
               </a>
             </div>
           </nav>
+          <!-- /.menu -->
+          <div class="production">
+            <h1 class="production__title">Креативный продакшн</h1>
+            <span class="production__description">
+              Мы формируем команды <br> под любую задачу
+            </span>
+            <!-- <a class="production__link" href="tel:+79006203011">8 (900) 620-30-11</a> -->
+            <div class="production__connect">
+              <button class="button production__button">Наши проекты</button>
+              <button class="button production__button">Связаться</button>
+            </div>
+            <!-- /.production__connect -->
+          </div>
+          <!-- /.production -->
         </div>
         <!-- /.container -->
       </section>
@@ -112,7 +131,6 @@
     <!-- /.wrapper -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="javascript/jquery.vide.min.js"></script>
     <script src="javascript/scripts.js"></script>
   </body>
 </html>
