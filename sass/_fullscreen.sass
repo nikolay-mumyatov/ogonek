@@ -1,6 +1,6 @@
 .fullscreen
   min-height: 100vh
-  display: flex
+  display: grid
   overflow: hidden
   &::after
     content: ''
@@ -19,3 +19,13 @@
     width: 100%
     height: 100vh
     object-fit: cover
+
+  &__background
+    background: url('../images/logo_red.svg') center / contain no-repeat fixed
+    &::after
+      display: none
+
+  &__fashion
+    background: url('../images/block_1.png') center / cover no-repeat
+    &::after
+      display: none
