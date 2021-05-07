@@ -1,0 +1,54 @@
+.movies
+  padding-top: 100px
+  padding-bottom: 50px
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 50px
+
+  &__block
+    flex-basis: 48%
+    display: flex
+
+  &__description
+    flex-basis: 80%
+    margin-right: 30px
+  &__title
+  &__text
+
+  &__video
+    margin: 0
+    width: 100%
+
+.video
+  position: relative
+  width: 100%
+  height: 0
+  padding-bottom: 56.25%
+
+  &__media
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border: none
+
+  &__button
+    display: none
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 68px
+    height: 68px
+    border: none
+    background: transparent
+    transform: translate(-50%, -50%)
+    cursor: pointer
+    outline: none
+
+
+
+.video--enabled .video__button
+  display: block

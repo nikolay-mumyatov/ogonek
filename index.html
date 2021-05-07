@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- autoplay="autoplay"  -->
-    <header class="wrapper">
+    <div class="wrapper">
       <section class="fullscreen">
         <video autoplay="autoplay" loop="loop" muted="muted" playsinline preload="yes" poster="video/cadr.png" class="fullscreen__video">
           <source src="video/A Woman Is Taking Pictures With a Film Camera.mp4" type="video/mp4"/>
@@ -18,7 +18,7 @@
         </video>
         <!-- /.fullscreen__video -->
         <div class="fullscreen__container">
-          <div class="header">
+          <header class="header">
             <a href="index.html" class="logo header__logo">
               <img src="images/logo_black.svg" alt="Логотип" class="logo__img" />
             </a>
@@ -29,7 +29,7 @@
               <span class="burger-menu__line"></span>
             </button>
             <!-- /.burger-menu -->
-          </div>
+          </header>
           <!-- /.header -->
           <nav class="menu">
             <ul class="menu__list">
@@ -78,25 +78,108 @@
       <!-- Псевдо-паралакс надпись OGONEK -->
       </div>
       <!-- /.fullscreen fullscreen__background -->
-    </header>
+    </div>
+    <!-- /.wrapper -->
 
     <!-- <section class="fullscreen fullscreen__fashion">
     </section>
     /.fullscreen fullscreen__fashion -->
 
-    <section class="fullscreen fullscreen__projects projects">
+    <!-- <section class="fullscreen fullscreen__projects projects">
       <ul class="projects__list">
         <li><a href="#" class="projects__link"><span class="projects__number">01</span> Fashion movie</a></li>
         <li><a href="#" class="projects__link"><span class="projects__number">02</span> SMM content</a></li>
         <li><a href="#" class="projects__link"><span class="projects__number">03</span> Brand identity</a></li>
-      </ul>
+      </ul> -->
       <!-- /.projects__list -->
-    </section>
+    <!-- </section> -->
     <!-- /.projects -->
 
-    <!-- /.wrapper -->
+    <section class="movies">
+      <div class="container">
+        <h2 class="section__title"><span class="section__number">01</span>Fashion movie</h2>
+        <div class="movies__wrapper">
+
+          
+          <div class="movies__block">
+            <div class="movies__description">
+              <h3 class="movies__title">Stacy</h3>
+              <p class="movies__text">Director: Efim Bakaev
+                Producers: Taya Komarova, Stepan Chernikov
+                Creative producer: Vera Jigalova
+                Camera: Leonid Kim
+                Art director: Julia Orlova
+                Sound design: Mitya Krupenya
+                Stylist: Anna Guseva
+                Stylist assistant: Ekaterina Velikaya, Olessya Borovick
+                Make up & hair: Buldakova Natalya
+                1ac & equipment: Max Gasanov
+                Gaffer: Dmitry Bobko
+                Colorist: Karol Cybulski, Cheat It
+                Model: An Kubanova 
+                
+              </p>
+            </div>
+            <!-- /.movies__description -->
+            <div class="movies__video">
+              <div class="video">
+                <a href="https://player.vimeo.com/video/536875377autoplay=1" class="video__link">
+                  <img src="images/stacy.png" alt="Обложка видео" class="video__media">
+                </a>
+                <button class="video__button" aria-level="Запустить видео">
+                  <img src="images/play.svg" style="width: 68px; height: 68px;" alt="play">
+                </button>
+              </div>
+            </div>
+            <!-- /.movies__video -->
+          </div>
+          <!-- /.movies__block -->
+
+          <div class="movies__block">
+            <div class="movies__description">
+              <h3 class="movies__title">Stacy</h3>
+              <p class="movies__text">Director: Efim Bakaev
+                Producers: Taya Komarova, Stepan Chernikov
+                Creative producer: Vera Jigalova
+                Camera: Leonid Kim
+                Art director: Julia Orlova
+                Sound design: Mitya Krupenya
+                Stylist: Anna Guseva
+                Stylist assistant: Ekaterina Velikaya, Olessya Borovick
+                Make up & hair: Buldakova Natalya
+                1ac & equipment: Max Gasanov
+                Gaffer: Dmitry Bobko
+                Colorist: Karol Cybulski, Cheat It
+                Model: An Kubanova 
+                
+              </p>
+            </div>
+            <!-- /.movies__description -->
+            <div class="movies__video">
+              <div class="video">
+                <a href="https://player.vimeo.com/video/504363971?autoplay=1" class="video__link">
+                  <img src="images/stacy.png" alt="Обложка видео" class="video__media">
+                </a>
+                <button class="video__button" aria-level="Запустить видео">
+                  <img src="images/play.svg" style="width: 68px; height: 68px;" alt="play">
+                </button>
+              </div>
+            </div>
+            <!-- /.movies__video -->
+          </div>
+          <!-- /.movies__block -->
+  
+        </div>
+        <!-- /.movies__wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.movies -->
+
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="javascript/scripts.js"></script>
+    <script src="javascript/video.js"></script>
   </body>
 </html>
