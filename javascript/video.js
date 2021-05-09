@@ -14,12 +14,10 @@ function setupVideo(video) {
 
   video.addEventListener("click", () => {
     let iframe = createIframe();
-    let scriptVideo = createScript();
 
     link.remove();
     button.remove();
     video.appendChild(iframe);
-    video.appendChild(scriptVideo);
   });
 
   video.classList.add("video--enabled");
@@ -28,7 +26,6 @@ function setupVideo(video) {
 function createIframe() {
   let srcVideo = document.querySelector(".video__link").getAttribute("href");
   let iframeVideo = document.createElement("iframe");
-
 
   iframeVideo.setAttribute("src", srcVideo);
   iframeVideo.setAttribute(
@@ -41,16 +38,6 @@ function createIframe() {
   iframeVideo.classList.add("video__media");
 
   return iframeVideo;
-}
-
-function createScript() {
-
-  let srcVideo = document.querySelector(".video__link").getAttribute("href");
-  let scriptVideo = document.createElement("script");
-
-  scriptVideo.setAttribute("src", srcVideo);
-
-  return scriptVideo;
 }
 
 findVideos();
