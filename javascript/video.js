@@ -13,6 +13,7 @@ function setupVideo(video) {
   let button = video.querySelector(".video__button"); // получаем кнопку блока
 
   video.addEventListener("click", () => {
+    event.preventDefault(); // отмена работы ссылки по умолчанию.
     let iframe = createIframe(videoLink); // по клику формируется iframe и передается ссылка в createIframe
 
     videoLink.remove(); // удаляем ссыку из блока
