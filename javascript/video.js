@@ -1,30 +1,33 @@
 function findVideos() {
+  // получаем все блоки с видео
   let videos = document.querySelectorAll(".video");
 
+  // проходим цыклом и вешаем событие setupVideo
   for (let i = 0; i < videos.length; i++) {
     setupVideo(videos[i]);
   }
 }
 
 function setupVideo(video) {
-  let link = video.querySelector(".video__link");
-  let button = video.querySelector(".video__button");
-
-  console.log(link);
+  let videoLink = video.querySelector(".video__link"); // получаем ссылку блока
+  let button = video.querySelector(".video__button"); // получаем кнопку блока
 
   video.addEventListener("click", () => {
-    let iframe = createIframe();
+    let iframe = createIframe(videoLink); // по клику формируется iframe и передается ссылка в createIframe
 
-    link.remove();
-    button.remove();
-    video.appendChild(iframe);
+    videoLink.remove(); // удаляем ссыку из блока
+    button.remove(); // удаляем кнопку из блока
+    video.appendChild(iframe); // добавляем сам iframe в блок
   });
 
-  video.classList.add("video--enabled");
+  video.classList.add("video--enabled"); // добавляется класс к блоку, если скрипт загружен. Если нет, то останется ссылка на видео.
 }
 
-function createIframe() {
-  let srcVideo = document.querySelector(".video__link").getAttribute("href");
+function createIframe(videoLink) {
+  // получаем значение атрибута href ссылки блока
+  let srcVideo = videoLink.getAttribute("href");
+
+  // формируем iframe
   let iframeVideo = document.createElement("iframe");
 
   iframeVideo.setAttribute("src", srcVideo);
