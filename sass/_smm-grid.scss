@@ -1,0 +1,47 @@
+.smm {
+    &__gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 7px 7px;
+        grid-template-areas:
+            "img_1 img_1 img_2"
+            "img_1 img_1 img_3"
+            "img_4 img_5 img_6";
+    }
+    &__img{
+        position: relative;
+        min-height: 200px;
+        min-width: 300px;
+        
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.img_1 { 
+    grid-area: img_1; 
+}
+.img_2 { 
+    grid-area: img_2; 
+}
+.img_3 { 
+    grid-area: img_3; 
+}
+.img_4 { 
+    grid-area: img_4; 
+}
+.img_5 { 
+    grid-area: img_5; 
+}
+.img_6 { 
+    grid-area: img_6; 
+}
