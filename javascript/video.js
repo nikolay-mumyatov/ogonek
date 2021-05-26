@@ -1,3 +1,5 @@
+'use strict';
+
 function findVideos() {
   // получаем все блоки с видео
   let videos = document.querySelectorAll(".video");
@@ -21,7 +23,8 @@ function setupVideo(video) {
     video.appendChild(iframe); // добавляем сам iframe в блок
   });
 
-  video.classList.add("video--enabled"); // добавляется класс к блоку, если скрипт загружен. Если нет, то останется ссылка на видео.
+  // добавляется класс к блоку, если скрипт загружен. Если нет, то останется ссылка на видео.
+  video.classList.add("video--enabled");
 }
 
 function createIframe(videoLink) {
